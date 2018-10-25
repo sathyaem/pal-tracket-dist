@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegistrationController {
     private final RegistrationService service;
-
+    private int test;
     public RegistrationController(RegistrationService service) {
         this.service = service;
     }
