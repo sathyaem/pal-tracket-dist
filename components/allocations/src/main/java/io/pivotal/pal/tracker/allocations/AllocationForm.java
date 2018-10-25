@@ -6,6 +6,7 @@ public class AllocationForm {
     public final long userId;
     public final String firstDay;
     public final String lastDay;
+    public int test;
 
     private AllocationForm() { // for jackson
         this(allocationFormBuilder());
