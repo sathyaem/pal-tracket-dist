@@ -71,6 +71,7 @@ jobs:
     script:
     - echo "Downloading registration server $RELEASE_TAG"
     - wget -P applications/registration-server/build/libs https://github.com/$GITHUB_USERNAME/pal-tracker-distributed/releases/download/$RELEASE_TAG/registration-server.jar
+    - echo "$RELEASE_TAG"
     before_deploy:
     - cp manifest-registration.yml manifest.yml
     - echo "Deploying registration server $RELEASE_TAG"
